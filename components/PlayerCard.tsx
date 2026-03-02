@@ -33,10 +33,10 @@ export const PlayerCard = ({
     badgeBorder = "border-transparent";
     badgeContent = "HIDDEN"; // Invisible but occupies space
   } else if (rarity === "C") {
-    badgeBg = "bg-red-900";
-    badgeText = "text-red-300";
-    badgeBorder = "border-red-500";
-    auraColor = "rgba(220, 38, 38, 0.1)";
+    badgeBg = "bg-green-900";
+    badgeText = "text-green-300";
+    badgeBorder = "border-green-500";
+    auraColor = "rgba(22, 163, 74, 0.1)";
     badgeContent = "TOP 1000";
   } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
@@ -45,10 +45,10 @@ export const PlayerCard = ({
     auraColor = "rgba(37, 99, 235, 0.1)";
     badgeContent = "TOP 500";
   } else if (rarity === "A") {
-    badgeBg = "bg-green-900";
-    badgeText = "text-green-300";
-    badgeBorder = "border-green-500";
-    auraColor = "rgba(22, 163, 74, 0.1)";
+    badgeBg = "bg-red-900";
+    badgeText = "text-red-300";
+    badgeBorder = "border-red-500";
+    auraColor = "rgba(220, 38, 38, 0.15)";
     badgeContent = "TOP 250";
   } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
