@@ -40,7 +40,7 @@ export const PlayerCard = ({
     badgeText = "text-blue-300";
     badgeBorder = "border-blue-500";
     auraColor = "rgba(37, 99, 235, 0.1)";
-    badgeContent = "ADVANCED APTITUDE";
+    badgeContent = "ESTABLISHED PROFESSIONAL";
   } else if (rarity === "A") {
     badgeBg = "bg-green-900";
     badgeText = "text-green-300";
