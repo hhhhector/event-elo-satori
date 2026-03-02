@@ -28,37 +28,39 @@ export const PlayerCard = ({
   let badgeContent = "N/A";
 
   if (rarity === "D") {
-    badgeContent = "UNTAPPED POTENTIAL";
+    badgeContent = "RISING POTENTIAL";
   } else if (rarity === "C") {
     badgeBg = "bg-red-900";
     badgeText = "text-red-300";
     badgeBorder = "border-red-500";
     auraColor = "rgba(220, 38, 38, 0.1)";
-    badgeContent = "PROVEN COMPETITOR";
+    badgeContent = "RELIABLE PROVEN COMPETITOR";
   } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
     badgeText = "text-blue-300";
     badgeBorder = "border-blue-500";
     auraColor = "rgba(37, 99, 235, 0.1)";
-    badgeContent = "ESTABLISHED PROFESSIONAL";
+    badgeContent = "ESTABLISHED HIGH-YIELD PROFESSIONAL";
   } else if (rarity === "A") {
     badgeBg = "bg-green-900";
     badgeText = "text-green-300";
     badgeBorder = "border-green-500";
     auraColor = "rgba(22, 163, 74, 0.1)";
-    badgeContent = "ELITE CALIBER";
+    badgeContent = "UNBELIEVABLY PRODIGIOUS PREMIER COMPETITIVE THREAT";
   } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
     badgeText = "text-amber-400";
     badgeBorder = "border-amber-500";
     auraColor = "rgba(245, 158, 11, 0.15)";
-    badgeContent = "WORLD-CLASS PHENOMENON";
+    badgeContent =
+      "UNQUESTIONABLY DOMINANT WORLD-CLASS PHENOMENON OF UNMATCHED PROPORTIONS";
   } else if (rarity === "X") {
     badgeBg = "bg-pink-900";
     badgeText = "text-pink-300";
     badgeBorder = "border-pink-500";
     auraColor = "rgba(233, 30, 99, 0.25)";
-    badgeContent = "UNDISPUTED GENERATIONAL TALENT";
+    badgeContent =
+      "UNDISPUTED ONCE-IN-A-LIFETIME GENERATIONAL TALENT AND THE ABSOLUTE PINNACLE OF HUMAN COMPETITIVE ACHIEVEMENT";
   }
 
   return (
