@@ -34,19 +34,19 @@ export const PlayerCard = ({
     badgeText = "text-red-300";
     badgeBorder = "border-red-500";
     auraColor = "rgba(220, 38, 38, 0.1)";
-    badgeContent = "RELIABLE PROVEN COMPETITOR";
+    badgeContent = "RELIABLE COMPETITOR";
   } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
     badgeText = "text-blue-300";
     badgeBorder = "border-blue-500";
     auraColor = "rgba(37, 99, 235, 0.1)";
-    badgeContent = "ESTABLISHED HIGH-YIELD PROFESSIONAL";
+    badgeContent = "ESTABLISHED PROFESSIONAL";
   } else if (rarity === "A") {
     badgeBg = "bg-green-900";
     badgeText = "text-green-300";
     badgeBorder = "border-green-500";
     auraColor = "rgba(22, 163, 74, 0.1)";
-    badgeContent = "UNBELIEVABLY PRODIGIOUS PREMIER COMPETITIVE THREAT";
+    badgeContent = "UNBELIEVABLY PRODIGIOUS COMPETITIVE THREAT";
   } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
     badgeText = "text-amber-400";
