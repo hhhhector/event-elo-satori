@@ -36,7 +36,7 @@ export const PlayerCard = ({
     badgeBg = "bg-green-900";
     badgeText = "text-green-300";
     badgeBorder = "border-green-500";
-    auraColor = "rgba(22, 163, 74, 0.1)";
+    auraColor = "rgba(22, 163, 74, 0.05)";
     badgeContent = "TOP 1000";
   } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
