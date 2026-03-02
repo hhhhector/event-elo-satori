@@ -28,37 +28,37 @@ export const PlayerCard = ({
   let badgeContent = "N/A";
 
   if (rarity === "D") {
-    badgeContent = "D";
+    badgeContent = "UNTAPPED POTENTIAL";
   } else if (rarity === "C") {
     badgeBg = "bg-red-900";
     badgeText = "text-red-300";
     badgeBorder = "border-red-500";
     auraColor = "rgba(220, 38, 38, 0.1)";
-    badgeContent = "C";
+    badgeContent = "PROVEN COMPETITOR";
   } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
     badgeText = "text-blue-300";
     badgeBorder = "border-blue-500";
     auraColor = "rgba(37, 99, 235, 0.1)";
-    badgeContent = "B";
+    badgeContent = "ADVANCED APTITUDE";
   } else if (rarity === "A") {
     badgeBg = "bg-green-900";
     badgeText = "text-green-300";
     badgeBorder = "border-green-500";
     auraColor = "rgba(22, 163, 74, 0.1)";
-    badgeContent = "A";
+    badgeContent = "ELITE CALIBER";
   } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
     badgeText = "text-amber-400";
     badgeBorder = "border-amber-500";
     auraColor = "rgba(245, 158, 11, 0.15)";
-    badgeContent = "S";
+    badgeContent = "WORLD-CLASS PHENOMENON";
   } else if (rarity === "X") {
     badgeBg = "bg-pink-900";
     badgeText = "text-pink-300";
     badgeBorder = "border-pink-500";
     auraColor = "rgba(233, 30, 99, 0.25)";
-    badgeContent = "X";
+    badgeContent = "UNDISPUTED GENERATIONAL TALENT";
   }
 
   return (
