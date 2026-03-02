@@ -63,6 +63,9 @@ export async function GET(req: NextRequest) {
             weight: 700,
           },
         ],
+        headers: {
+          "Cache-Control": "public, s-maxage=31536000, immutable",
+        },
       },
     );
   } catch (e: any) {
