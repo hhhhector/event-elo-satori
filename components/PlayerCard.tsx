@@ -36,7 +36,7 @@ export const PlayerCard = ({
     badgeBg = "bg-green-900";
     badgeText = "text-green-300";
     badgeBorder = "border-green-500";
-    auraColor = "rgba(22, 163, 74, 0.05)";
+    auraColor = "rgba(22, 163, 74, 0.1)";
     badgeContent = "TOP 1000";
   } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
@@ -48,19 +48,19 @@ export const PlayerCard = ({
     badgeBg = "bg-red-900";
     badgeText = "text-red-300";
     badgeBorder = "border-red-500";
-    auraColor = "rgba(220, 38, 38, 0.15)";
+    auraColor = "rgba(220, 38, 38, 0.2)";
     badgeContent = "TOP 250";
   } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
     badgeText = "text-amber-400";
     badgeBorder = "border-amber-500";
-    auraColor = "rgba(245, 158, 11, 0.15)";
+    auraColor = "rgba(245, 158, 11, 0.2)";
     badgeContent = "TOP 100";
   } else if (rarity === "X") {
     badgeBg = "bg-pink-900";
     badgeText = "text-pink-300";
     badgeBorder = "border-pink-500";
-    auraColor = "rgba(233, 30, 99, 0.25)";
+    auraColor = "rgba(233, 30, 99, 0.3)";
     badgeContent = "TOP 10";
   }
 
