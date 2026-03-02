@@ -25,32 +25,40 @@ export const PlayerCard = ({
   let badgeText = "text-neutral-300";
   let badgeBorder = "border-neutral-500";
   let auraColor = "transparent";
+  let badgeContent = "N/A";
 
-  if (rarity === "C-TIER") {
+  if (rarity === "D") {
+    badgeContent = "D";
+  } else if (rarity === "C") {
     badgeBg = "bg-red-900";
     badgeText = "text-red-300";
     badgeBorder = "border-red-500";
     auraColor = "rgba(220, 38, 38, 0.1)";
-  } else if (rarity === "B-TIER") {
+    badgeContent = "C";
+  } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
     badgeText = "text-blue-300";
     badgeBorder = "border-blue-500";
     auraColor = "rgba(37, 99, 235, 0.1)";
-  } else if (rarity === "A-TIER") {
+    badgeContent = "B";
+  } else if (rarity === "A") {
     badgeBg = "bg-green-900";
     badgeText = "text-green-300";
     badgeBorder = "border-green-500";
     auraColor = "rgba(22, 163, 74, 0.1)";
-  } else if (rarity === "S-TIER") {
+    badgeContent = "A";
+  } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
     badgeText = "text-amber-400";
     badgeBorder = "border-amber-500";
     auraColor = "rgba(245, 158, 11, 0.15)";
-  } else if (rarity === "X-TIER") {
+    badgeContent = "S";
+  } else if (rarity === "X") {
     badgeBg = "bg-pink-900";
     badgeText = "text-pink-300";
     badgeBorder = "border-pink-500";
     auraColor = "rgba(233, 30, 99, 0.25)";
+    badgeContent = "X";
   }
 
   return (
@@ -114,7 +122,7 @@ export const PlayerCard = ({
             <div
               tw={`flex items-center justify-center px-3 py-0 rounded-full border-2 text-sm font-bold tracking-widest ${badgeBg} ${badgeText} ${badgeBorder}`}
             >
-              {rarity}
+              {badgeContent}
             </div>
             <div tw="flex justify-center items-center w-full mt-5 mb-5 relative">
               {auraColor !== "transparent" && (
