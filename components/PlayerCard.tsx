@@ -66,27 +66,30 @@ export const PlayerCard = ({
     badgeBg = "bg-red-900";
     badgeText = "text-red-300";
     badgeBorder = "border-red-500";
-    auraColor = "rgba(220, 38, 38, 0.2)";
+    auraColor = "rgba(220, 38, 38, 0.1)";
     glowColor = "rgba(220, 38, 38, 0.5)";
     badgeContent = "TOP 250";
   } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
     badgeText = "text-amber-400";
     badgeBorder = "border-amber-500";
-    auraColor = "rgba(245, 158, 11, 0.2)";
+    auraColor = "rgba(245, 158, 11, 0.15)";
     glowColor = "rgba(245, 158, 11, 0.5)";
     badgeContent = "TOP 100";
   } else if (rarity === "X") {
     badgeBg = "bg-pink-900";
     badgeText = "text-pink-300";
     badgeBorder = "border-pink-500";
-    auraColor = "rgba(233, 30, 99, 0.3)";
+    auraColor = "rgba(233, 30, 99, 0.2)";
     glowColor = "rgba(233, 30, 99, 0.5)";
     badgeContent = "TOP 10";
   }
 
   return (
-    <div tw="flex flex-col items-center w-full h-full bg-[#0a0a0a] text-white font-['Outfit'] p-3">
+    <div
+      tw="flex flex-col items-center w-full h-full bg-[#0a0a0a] text-white p-3"
+      style={{ fontFamily: "Outfit" }}
+    >
       <div
         tw="flex flex-col w-full h-full border-2 border-neutral-700 rounded-2xl p-8 bg-neutral-900 shadow-2xl relative justify-end"
         style={{
@@ -141,8 +144,11 @@ export const PlayerCard = ({
         <div tw="flex flex-col w-full items-start justify-start px-2">
           <div tw="flex flex-col items-start w-full">
             <h1
-              style={{ fontSize: `${calculatedFontSize}px` }}
-              tw="m-0 p-0 font-bold text-white tracking-wider mb-2 "
+              style={{
+                fontSize: `${calculatedFontSize}px`,
+                letterSpacing: "0.05em",
+              }}
+              tw="m-0 p-0 font-bold text-white mb-2 "
             >
               {name}
             </h1>
@@ -181,7 +187,7 @@ export const PlayerCard = ({
           </div>
 
           {/* Stats Two-Column Grid */}
-          <div tw="flex w-full justify-between mt-[-375px] relative">
+          <div tw="flex w-full justify-between mt-[-390px] relative">
             {/* Left Column - Rating */}
             <div tw="flex flex-col w-[48%] pr-4">
               <span
@@ -207,7 +213,7 @@ export const PlayerCard = ({
                 {rating}
               </span>
 
-              <span tw="text-m text-neutral-300 font-bold mb-1 uppercase">
+              <span tw="text-base text-neutral-300 font-bold mb-1 uppercase">
                 Peak
               </span>
               <span tw="text-2xl text-white font-bold">{peakRating}</span>
@@ -238,7 +244,7 @@ export const PlayerCard = ({
                 #{rank}
               </span>
 
-              <span tw="text-m text-neutral-300 font-bold mb-1 uppercase">
+              <span tw="text-base text-neutral-300 font-bold mb-1 uppercase">
                 Peak
               </span>
               <span tw="text-2xl text-white font-bold">#{peakRank}</span>
