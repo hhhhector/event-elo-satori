@@ -17,26 +17,26 @@ export const TIER_THEMES: Record<string, TierTheme> = {
     badgeContent: "HIDDEN",
   },
   C: {
-    badgeBg: "bg-green-900",
-    badgeText: "text-green-300",
-    badgeBorder: "border-green-500",
-    auraColor: "rgba(22, 163, 74, 0.05)",
+    badgeBg: "bg-blue-900",
+    badgeText: "text-blue-300",
+    badgeBorder: "border-blue-500",
+    auraColor: "rgba(37, 99, 235, 0.05)", // Green
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 1000",
   },
   B: {
-    badgeBg: "bg-sky-900",
-    badgeText: "text-sky-300",
-    badgeBorder: "border-sky-500",
-    auraColor: "rgba(0, 166, 237, 0.1)", // Green
+    badgeBg: "bg-[#5E3306]",
+    badgeText: "text-[#EEA05E]",
+    badgeBorder: "border-[#D48F54]",
+    auraColor: "rgba(221, 139, 69, 0.1)",
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 500",
   },
   A: {
-    badgeBg: "bg-purple-900",
-    badgeText: "text-purple-300",
-    badgeBorder: "border-purple-500",
-    auraColor: "rgba(173, 70, 265, 0.15)", // Red
+    badgeBg: "bg-slate-900",
+    badgeText: "text-slate-300",
+    badgeBorder: "border-slate-500",
+    auraColor: "rgba(144, 161, 185, 0.2)", // Red
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 250",
   },
