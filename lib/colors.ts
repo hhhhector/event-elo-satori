@@ -12,7 +12,7 @@ export const TIER_THEMES: Record<string, TierTheme> = {
     badgeBg: "bg-transparent",
     badgeText: "text-transparent",
     badgeBorder: "border-transparent",
-    auraColor: "transparent",
+    auraColor: "rgba(144, 161, 185, 0.05)", // Red
     glowColor: "transparent",
     badgeContent: "HIDDEN",
   },
@@ -28,7 +28,7 @@ export const TIER_THEMES: Record<string, TierTheme> = {
     badgeBg: "bg-sky-900",
     badgeText: "text-sky-300",
     badgeBorder: "border-sky-500",
-    auraColor: "rgba(0, 166, 237, 0.1)", // Green
+    auraColor: "rgba(0, 166, 237, 0.05)", // Green
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 500",
   },
@@ -36,7 +36,7 @@ export const TIER_THEMES: Record<string, TierTheme> = {
     badgeBg: "bg-purple-900",
     badgeText: "text-purple-300",
     badgeBorder: "border-purple-500",
-    auraColor: "rgba(173, 70, 265, 0.15)", // Red
+    auraColor: "rgba(173, 70, 265, 0.1)", // Red
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 250",
   },
@@ -44,7 +44,7 @@ export const TIER_THEMES: Record<string, TierTheme> = {
     badgeBg: "bg-amber-900",
     badgeText: "text-amber-400",
     badgeBorder: "border-amber-500",
-    auraColor: "rgba(245, 158, 11, 0.2)", // Amber
+    auraColor: "rgba(245, 158, 11, 0.15)", // Amber
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 100",
   },
