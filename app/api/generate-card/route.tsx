@@ -25,7 +25,7 @@ export async function GET(req: NextRequest) {
 
     const avatarUrl =
       searchParams.get("avatar_url") ||
-      `https://mc-heads.net/head/${name === "Unknown Player" ? "MHF_Steve" : name}/350`;
+      `https://mc-heads.net/body/${name === "Unknown Player" ? "MHF_Steve" : name}/600`;
 
     const [fontBoldData, fontRegularData] = await Promise.all([
       fontBoldPromise,
