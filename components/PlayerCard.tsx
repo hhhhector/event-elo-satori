@@ -1,3 +1,5 @@
+import { getTierTheme } from "@/lib/colors";
+
 export interface PlayerCardProps {
   name: string;
   rarity: string;
@@ -36,54 +38,7 @@ export const PlayerCard = ({
       ? (baseFontSize * maxWeight) / visualWeight
       : baseFontSize;
 
-  let badgeBg = "bg-neutral-800";
-  let badgeText = "text-neutral-300";
-  let badgeBorder = "border-neutral-500";
-  let auraColor = "transparent";
-  let glowColor = "transparent";
-  let badgeContent = "N/A";
-
-  if (rarity === "D") {
-    badgeBg = "bg-transparent";
-    badgeText = "text-transparent";
-    badgeBorder = "border-transparent";
-    badgeContent = "HIDDEN";
-  } else if (rarity === "C") {
-    badgeBg = "bg-green-900";
-    badgeText = "text-green-300";
-    badgeBorder = "border-green-500";
-    auraColor = "rgba(22, 163, 74, 0.1)";
-    glowColor = "rgba(0, 0, 0, 1)";
-    badgeContent = "TOP 1000";
-  } else if (rarity === "B") {
-    badgeBg = "bg-blue-900";
-    badgeText = "text-blue-300";
-    badgeBorder = "border-blue-500";
-    auraColor = "rgba(37, 99, 235, 0.1)";
-    glowColor = "rgba(0, 0, 0, 1)";
-    badgeContent = "TOP 500";
-  } else if (rarity === "A") {
-    badgeBg = "bg-red-900";
-    badgeText = "text-red-300";
-    badgeBorder = "border-red-500";
-    auraColor = "rgba(220, 38, 38, 0.1)";
-    glowColor = "rgba(0, 0, 0, 1)";
-    badgeContent = "TOP 250";
-  } else if (rarity === "S") {
-    badgeBg = "bg-amber-900";
-    badgeText = "text-amber-400";
-    badgeBorder = "border-amber-500";
-    auraColor = "rgba(245, 158, 11, 0.15)";
-    glowColor = "rgba(0, 0, 0, 1)";
-    badgeContent = "TOP 100";
-  } else if (rarity === "X") {
-    badgeBg = "bg-pink-900";
-    badgeText = "text-pink-300";
-    badgeBorder = "border-pink-500";
-    auraColor = "rgba(233, 30, 99, 0.2)";
-    glowColor = "rgba(0, 0, 0, 1)";
-    badgeContent = "TOP 10";
-  }
+  const { badgeBg, badgeText, badgeBorder, auraColor, glowColor, badgeContent } = getTierTheme(rarity);
 
   return (
     <div
