@@ -52,7 +52,7 @@ export const TIER_THEMES: Record<string, TierTheme> = {
     badgeBg: "bg-red-900",
     badgeText: "text-red-300",
     badgeBorder: "border-red-500",
-    auraColor: "rgba(225, 29, 72, 0.3)", // Rose/Crimson
+    auraColor: "rgba(251, 44, 54, 0.3)", // Rose/Crimson
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 10",
   },
