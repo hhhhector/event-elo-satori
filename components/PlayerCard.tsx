@@ -53,35 +53,35 @@ export const PlayerCard = ({
     badgeText = "text-green-300";
     badgeBorder = "border-green-500";
     auraColor = "rgba(22, 163, 74, 0.1)";
-    glowColor = "rgba(22, 163, 74, 0.5)";
+    glowColor = "rgba(0, 0, 0, 1)";
     badgeContent = "TOP 1000";
   } else if (rarity === "B") {
     badgeBg = "bg-blue-900";
     badgeText = "text-blue-300";
     badgeBorder = "border-blue-500";
     auraColor = "rgba(37, 99, 235, 0.1)";
-    glowColor = "rgba(37, 99, 235, 0.5)";
+    glowColor = "rgba(0, 0, 0, 1)";
     badgeContent = "TOP 500";
   } else if (rarity === "A") {
     badgeBg = "bg-red-900";
     badgeText = "text-red-300";
     badgeBorder = "border-red-500";
     auraColor = "rgba(220, 38, 38, 0.1)";
-    glowColor = "rgba(220, 38, 38, 0.5)";
+    glowColor = "rgba(0, 0, 0, 1)";
     badgeContent = "TOP 250";
   } else if (rarity === "S") {
     badgeBg = "bg-amber-900";
     badgeText = "text-amber-400";
     badgeBorder = "border-amber-500";
     auraColor = "rgba(245, 158, 11, 0.15)";
-    glowColor = "rgba(245, 158, 11, 0.5)";
+    glowColor = "rgba(0, 0, 0, 1)";
     badgeContent = "TOP 100";
   } else if (rarity === "X") {
     badgeBg = "bg-pink-900";
     badgeText = "text-pink-300";
     badgeBorder = "border-pink-500";
     auraColor = "rgba(233, 30, 99, 0.2)";
-    glowColor = "rgba(233, 30, 99, 0.5)";
+    glowColor = "rgba(0, 0, 0, 1)";
     badgeContent = "TOP 10";
   }
 
@@ -93,7 +93,7 @@ export const PlayerCard = ({
       <div
         tw="flex flex-col w-full h-full border-2 border-neutral-700 rounded-2xl p-8 bg-neutral-900 shadow-2xl relative justify-end"
         style={{
-          backgroundImage: "linear-gradient(to bottom right, #0a0a0a, #202020)",
+          backgroundImage: "linear-gradient(to bottom right, #090909, #161616)",
         }}
       >
         {/* Subtle Top Right Stats */}
@@ -213,10 +213,28 @@ export const PlayerCard = ({
                 {rating}
               </span>
 
-              <span tw="text-base text-neutral-300 font-bold mb-1 uppercase">
+              <span
+                tw="text-base text-neutral-300 font-bold mb-1 uppercase"
+                style={{
+                  textShadow:
+                    glowColor !== "transparent"
+                      ? `0 0 50px ${glowColor}`
+                      : "none",
+                }}
+              >
                 Peak
               </span>
-              <span tw="text-2xl text-white font-bold">{peakRating}</span>
+              <span
+                tw="text-2xl text-white font-bold"
+                style={{
+                  textShadow:
+                    glowColor !== "transparent"
+                      ? `0 0 50px ${glowColor}`
+                      : "none",
+                }}
+              >
+                {peakRating}
+              </span>
             </div>
 
             {/* Right Column - Rank */}
@@ -244,10 +262,28 @@ export const PlayerCard = ({
                 #{rank}
               </span>
 
-              <span tw="text-base text-neutral-300 font-bold mb-1 uppercase">
+              <span
+                tw="text-base text-neutral-300 font-bold mb-1 uppercase"
+                style={{
+                  textShadow:
+                    glowColor !== "transparent"
+                      ? `0 0 50px ${glowColor}`
+                      : "none",
+                }}
+              >
                 Peak
               </span>
-              <span tw="text-2xl text-white font-bold">#{peakRank}</span>
+              <span
+                tw="text-2xl text-white font-bold"
+                style={{
+                  textShadow:
+                    glowColor !== "transparent"
+                      ? `0 0 50px ${glowColor}`
+                      : "none",
+                }}
+              >
+                #{peakRank}
+              </span>
             </div>
           </div>
         </div>
