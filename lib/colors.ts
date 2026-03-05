@@ -28,7 +28,7 @@ export const TIER_THEMES: Record<string, TierTheme> = {
     badgeBg: "bg-sky-900",
     badgeText: "text-sky-300",
     badgeBorder: "border-sky-500",
-    auraColor: "rgba(0, 166, 237, 0.05)", // Green
+    auraColor: "rgba(0, 166, 237, 0.075)", // Green
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 500",
   },
