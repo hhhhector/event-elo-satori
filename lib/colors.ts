@@ -42,11 +42,19 @@ export const TIER_THEMES: Record<string, TierTheme> = {
   },
   S: {
     badgeBg: "bg-amber-900",
-    badgeText: "text-amber-400",
+    badgeText: "text-amber-300",
     badgeBorder: "border-amber-500",
     auraColor: "rgba(245, 158, 11, 0.15)", // Amber
     glowColor: "rgba(0, 0, 0, 1)",
     badgeContent: "TOP 100",
+  },
+  SS: {
+    badgeBg: "bg-orange-900",
+    badgeText: "text-orange-300",
+    badgeBorder: "border-orange-500",
+    auraColor: "rgba(249, 115, 22, 0.25)", // Orange
+    glowColor: "rgba(0, 0, 0, 1)",
+    badgeContent: "TOP 50",
   },
   X: {
     badgeBg: "bg-red-900",
