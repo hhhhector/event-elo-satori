@@ -23,9 +23,10 @@ export async function GET(req: NextRequest) {
     const peakRating = searchParams.get("peak_rating") || "N/A";
     const peakRank = searchParams.get("peak_rank") || "N/A";
 
+    const facing = searchParams.get("facing") === "left" ? "left" : "right";
     const avatarUrl =
       searchParams.get("avatar_url") ||
-      `https://mc-heads.net/body/${name === "Unknown Player" ? "MHF_Steve" : name}/600`;
+      `https://mc-heads.net/body/${name === "Unknown Player" ? "MHF_Steve" : name}/600/${facing}`;
 
     const [fontBoldData, fontRegularData] = await Promise.all([
       fontBoldPromise,
